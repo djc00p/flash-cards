@@ -31,3 +31,9 @@ class TestTurn(unittest.TestCase):
         turn = Turn("Juneau", card)
 
         self.assertTrue(turn.feedback, "Correct!!")
+
+    def test_turn_feedback_for_incorrect_guess(self):
+        card = Card("What is the capital of Alaska?", "Juneau", 'Geography')
+        turn = Turn("Denver", card)
+
+        self.assertTrue(turn.feedback, "Incorrect!!")
