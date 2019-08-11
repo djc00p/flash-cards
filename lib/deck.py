@@ -6,3 +6,6 @@ class Deck(object):
 
     def count(self):
         return len(self.cards)
+
+    def cards_in_category(self, category):
+        return [x for x, x in enumerate(self.cards) if x.category == category]
