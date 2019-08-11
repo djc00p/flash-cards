@@ -7,3 +7,9 @@ class Turn(object):
 
     def correct(self):
         self.guess == self.card.answer
+
+    def feedback(self):
+        if correct == true:
+            print("Correct!!")
+        else:
+            print("Incorrect!!")
