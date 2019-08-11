@@ -8,6 +8,6 @@ class TestCard(unittest.TestCase):
         pass
 
     def test_card_has_a_question(self):
-        card = Card("What is the capital of Alaska?", "Juneau", 'Geography')
+        card = Card("What is the capital of Alaska?")
         q = card.question
         self.assertEqual(q,"What is the capital of Alaska?")
