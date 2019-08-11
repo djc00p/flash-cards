@@ -19,3 +19,9 @@ class TestTurn(unittest.TestCase):
         turn = Turn("Juneau", card)
 
         self.assertEqual(turn.guess, "Juneau")
+
+    def test_turn_guess_is_correct(self):
+        card = Card("What is the capital of Alaska?", "Juneau", 'Geography')
+        turn = Turn("Juneau", card)
+
+        self.assertTrue(turn.correct)
