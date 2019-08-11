@@ -1,5 +1,7 @@
-class Card(object):
+class Card:
     """docstring for Card."""
 
-    def __init__(self, question):
+    def __init__(self, question, answer, category):
         self.question = question
+        self.answer = answer
+        self.category = category
