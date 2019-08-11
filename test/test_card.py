@@ -16,3 +16,8 @@ class TestCard(unittest.TestCase):
         card = Card("What is the capital of Alaska?", "Juneau", 'Geography')
         a = card.answer
         self.assertEqual(a,"Juneau")
+
+    def test_card_has_a_category(self):
+        card = Card("What is the capital of Alaska?", "Juneau", 'Geography')
+        c = card.category
+        self.assertEqual(c,'Geography')
