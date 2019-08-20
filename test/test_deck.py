@@ -47,6 +47,7 @@ class TestTurn(unittest.TestCase):
         deck = Deck(cards)
         # import pdb; pdb.set_trace()
         self.assertEqual(deck.cards_in_category("Geography"), [card1])
+        
     def test_deck_returns_no_cards_in_PopCulture_category(self):
         card1 = Card("What is the capital of Alaska?", "Juneau", 'Geography')
         card2 = Card("The Viking spacecraft sent back to Earth photographs and reports about the surface of which planet?", "Mars", "STEM")
